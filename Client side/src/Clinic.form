@@ -1,0 +1,687 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="Clinic">
+  <grid id="27dc6" binding="main" layout-manager="GridLayoutManager" row-count="13" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+    <margin top="0" left="0" bottom="0" right="0"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="1681"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="8110f" binding="topPanel" layout-manager="GridLayoutManager" row-count="1" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-16125220"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="26ef7" class="javax.swing.JLabel" binding="name">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Courier New" size="20"/>
+              <text value="Clinic Messanger"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="562aa" binding="downPanel" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="477cd" class="javax.swing.JButton" binding="signUp">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="16"/>
+              <text value="Sign up"/>
+            </properties>
+          </component>
+          <component id="e8a57" class="javax.swing.JButton" binding="signIn">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="16"/>
+              <text value="Sign in"/>
+            </properties>
+          </component>
+          <component id="b6c9" class="javax.swing.JButton" binding="exitAndSave">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <font name="Droid Sans Mono Dotted" size="16"/>
+              <text value="Exit and save"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="deddd" binding="afterSignUp" layout-manager="GridLayoutManager" row-count="2" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="7ee99" class="javax.swing.JLabel" binding="signUpAs">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Sign up as:"/>
+            </properties>
+          </component>
+          <vspacer id="9585d">
+            <constraints>
+              <grid row="1" column="1" row-span="1" col-span="3" vsize-policy="6" hsize-policy="1" anchor="0" fill="2" indent="0" use-parent-layout="false"/>
+            </constraints>
+          </vspacer>
+          <component id="1b196" class="javax.swing.JRadioButton" binding="doctor">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Doctor"/>
+            </properties>
+          </component>
+          <component id="570c5" class="javax.swing.JRadioButton" binding="patient">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Patient"/>
+            </properties>
+          </component>
+          <component id="1a355" class="javax.swing.JRadioButton" binding="invisible">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="RadioButton"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="584e6" binding="doctorSignUp" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="6ef0d" class="javax.swing.JLabel" binding="doctorName">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your name :"/>
+            </properties>
+          </component>
+          <component id="25b96" class="javax.swing.JLabel" binding="doctorUserName">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your username :"/>
+            </properties>
+          </component>
+          <component id="dfda3" class="javax.swing.JLabel" binding="doctorPassword">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your password :"/>
+            </properties>
+          </component>
+          <component id="444de" class="javax.swing.JTextField" binding="doctorNameField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="afce4" class="javax.swing.JTextField" binding="doctorUsernameField">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="a7c6d" class="javax.swing.JTextField" binding="doctorPasswordField">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="132bd" class="javax.swing.JButton" binding="doctorSignUpButton">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Sign up"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="4bda4" binding="doctorStatus" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="9e6b2" class="javax.swing.JTextField" binding="doctorStatusField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <editable value="false"/>
+            </properties>
+          </component>
+          <component id="670a6" class="javax.swing.JButton" binding="doctorSignUpExit">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="d0a1f" binding="signInPanel" layout-manager="GridLayoutManager" row-count="7" column-count="4" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="80546" class="javax.swing.JLabel" binding="patientUserName">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your username :"/>
+            </properties>
+          </component>
+          <component id="bb642" class="javax.swing.JLabel" binding="patientPassword">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your password"/>
+            </properties>
+          </component>
+          <component id="3422d" class="javax.swing.JTextField" binding="patientUsernameField">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="fbd3e" class="javax.swing.JPasswordField" binding="patientPasswordField">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="f2509" class="javax.swing.JButton" binding="patientSignInbutton">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Sign in"/>
+            </properties>
+          </component>
+          <component id="50b20" class="javax.swing.JLabel" binding="signINAs">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Sign in as :"/>
+            </properties>
+          </component>
+          <component id="53dc2" class="javax.swing.JRadioButton" binding="doctorRadioButton">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <enabled value="true"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Doctor"/>
+            </properties>
+          </component>
+          <component id="88b0" class="javax.swing.JRadioButton" binding="patientRadioButton">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="patient"/>
+            </properties>
+          </component>
+          <component id="2b5fd" class="javax.swing.JRadioButton" binding="secondInvisible">
+            <constraints>
+              <grid row="1" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="RadioButton"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="731af" binding="patientStatus" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="4b017" class="javax.swing.JTextField" binding="patientStatusField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <editable value="false"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Username or password is not correct!"/>
+            </properties>
+          </component>
+          <component id="aec42" class="javax.swing.JButton" binding="patientSignInExit">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="19426" binding="afterSignIn" layout-manager="GridLayoutManager" row-count="5" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="7" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3cfbc" class="javax.swing.JButton" binding="exitSignIn">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+          <component id="9cf26" class="javax.swing.JButton" binding="sent">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="78" height="29"/>
+              </grid>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Sent"/>
+            </properties>
+          </component>
+          <component id="79e73" class="javax.swing.JButton" binding="sendMessage">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Send message"/>
+            </properties>
+          </component>
+          <component id="f1580" class="javax.swing.JButton" binding="accountInformation">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Edit account information"/>
+            </properties>
+          </component>
+          <component id="e3b2d" class="javax.swing.JButton" binding="inbox">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Inbox"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="34c48" binding="editInformation" layout-manager="GridLayoutManager" row-count="7" column-count="2" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="8" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+          <enabled value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="a1a4" class="javax.swing.JLabel" binding="editName">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your new name :"/>
+            </properties>
+          </component>
+          <component id="9517b" class="javax.swing.JLabel" binding="editUsername">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your new username :"/>
+            </properties>
+          </component>
+          <component id="dbd33" class="javax.swing.JLabel" binding="editPassword">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Please enter your new password :"/>
+            </properties>
+          </component>
+          <component id="b58aa" class="javax.swing.JTextField" binding="editNameField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="c1d3b" class="javax.swing.JTextField" binding="editUsernameField">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="ce141" class="javax.swing.JTextField" binding="editPasswordField">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="ba7aa" class="javax.swing.JButton" binding="save">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Save"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="3d56" binding="sendMesagePanel" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="9" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="b64b3" class="javax.swing.JTextArea" binding="composeArea">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="3" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+              <font name="Inconsolata" size="12"/>
+              <lineWrap value="false"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="a8f11" class="javax.swing.JLabel" binding="compose">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Compose message :"/>
+            </properties>
+          </component>
+          <component id="25345" class="javax.swing.JLabel" binding="to">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="To :"/>
+            </properties>
+          </component>
+          <component id="9aa7c" class="javax.swing.JTextField" binding="toField">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+            </properties>
+          </component>
+          <component id="c92d7" class="javax.swing.JButton" binding="sendButton">
+            <constraints>
+              <grid row="3" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Send"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="5a29e" binding="emailStatus" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="10" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="8a4b5" class="javax.swing.JTextField">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-5049625"/>
+              <editable value="false"/>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="reciver's username is not correct!"/>
+            </properties>
+          </component>
+          <component id="fcd43" class="javax.swing.JButton" binding="exitEmail">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="0" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="be2a1" binding="inboxPnl" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="11" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="23d3d" class="javax.swing.JTextArea" binding="inboxArea">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+              <editable value="false"/>
+              <font name="Inconsolata" size="12"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="41588" class="javax.swing.JButton" binding="exitSign">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <foreground color="-16777216"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <grid id="2aaaa" binding="sentPnl" layout-manager="GridLayoutManager" row-count="2" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="12" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <background color="-5049625"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="3f99e" class="javax.swing.JTextArea" binding="outBoxArea">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="50"/>
+              </grid>
+            </constraints>
+            <properties>
+              <background color="-1638401"/>
+              <editable value="false"/>
+              <font name="Inconsolata" size="12"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="c8bca" class="javax.swing.JButton" binding="sentExit">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="4" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <font name="Droid Sans Mono Dotted" size="14"/>
+              <foreground color="-16777216"/>
+              <text value="Exit"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="buttonGroup1">
+      <member id="570c5"/>
+      <member id="1b196"/>
+      <member id="1a355"/>
+    </group>
+    <group name="buttonGroup2">
+      <member id="53dc2"/>
+      <member id="88b0"/>
+      <member id="2b5fd"/>
+    </group>
+  </buttonGroups>
+</form>
